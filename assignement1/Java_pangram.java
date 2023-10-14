@@ -15,7 +15,7 @@ public class PangramChecker {
         
         for (boolean letter : letters) {
             if (!letter) {
-                return false; // Not a pangram
+                return false; 
             }
         }
 

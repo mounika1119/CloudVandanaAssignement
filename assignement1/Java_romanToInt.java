@@ -2,7 +2,6 @@ import java.util.HashMap;
 
 public class RomToInt {
     public static int romanToInt(String s) {
-        // Create a HashMap to store Roman numerals and their corresponding values
         HashMap<Character, Integer> roman = new HashMap<>();
         roman.put('I', 1);
         roman.put('V', 5);
@@ -15,12 +14,10 @@ public class RomToInt {
         int result = 0;
         int prevValue = 0;
 
-        // Iterate through the Roman numeral string from right to left
         for (int i = s.length() - 1; i >= 0; i--) {
             char currentChar = s.charAt(i);
             int currentValue = roman.get(currentChar);
 
-            // If the current value is less than the previous value, subtract it
             if (currentValue < prevValue) {
                 result -= currentValue;
             } else {
@@ -34,7 +31,7 @@ public class RomToInt {
     }
 
     public static void main(String[] args) {
-        String romanNumeral = "IX"; // Example Roman numeral "IX"
+        String romanNumeral = "IX"; 
 
         int integerEquivalent = romanToInt(romanNumeral);
 

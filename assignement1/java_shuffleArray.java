@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ShuffleArray {
     public static void main(String[] args) {
-        // Create an ArrayList with the values (1, 2, 3, 4, 5, 6, 7)
+        
         List<Integer> List1 = new ArrayList<>();
         List1.add(1);
         List1.add(2);
@@ -14,13 +14,13 @@ public class ShuffleArray {
         List1.add(6);
         List1.add(7);
 
-        // Shuffle the elements in the ArrayList
+        
         Collections.shuffle(List1);
 
-        // Convert the shuffled ArrayList back to an array if needed
+       
         Integer[] shuffledArray = List1.toArray(new Integer[0]);
 
-        // Print the shuffled array
+        
         for (int num : shuffledArray) {
             System.out.print(num + " ");
         }
